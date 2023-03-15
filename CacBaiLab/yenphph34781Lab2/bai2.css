@@ -1,0 +1,36 @@
+body{
+    margin:0;
+}
+header{
+    background-color: #4CAF50;
+    padding:10px; 
+    color:white;
+    
+}
+h2{
+    text-align : center;
+}
+ 
+section{
+    background-color: #FF9800;
+    padding:10px; 
+    margin: 10px auto;
+    text-align: center;
+    color:white;
+    width:80%;
+}
+footer{
+    background-color: #da952d;
+    padding:10px; 
+    text-align: center;
+    color:white;
+    
+}
+@media screen and (min-width:768px){
+    h2{
+       text-align : left;
+    }
+    section{
+        width:60%;
+    }
+}

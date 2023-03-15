@@ -34,14 +34,14 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
- body{
+body{
     margin:0;
     padding:0;
     background-color:antiquewhite;
 
 }
 .container{
-    width:1200px;
+    width:100%;
     margin:0 auto;
     background-color: aqua;
 }
@@ -86,5 +86,14 @@
     text-decoration: underline;
 }
 @media all and (max-width: 768px){
+   .container{
+    width: 100%;
+   }
+   .menu >li >a{
+    text-decoration: none;
+    padding:20px;
+    font-size: 10px;
+    color: black;
+}
    
 }
