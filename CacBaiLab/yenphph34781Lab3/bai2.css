@@ -66,13 +66,17 @@ button{
 }
 
 @media screen and ( max-width:600px){
-    .row{
-        flex-wrap: wrap;
-        flex-basis: 100%;
+     .row{
+         flex-wrap: wrap;
+        flex-basis: 100%; 
+       
     }
     .col{
-        flex-wrap: wrap;
-        flex-basis: 100%;
-        margin:10px 10px;
-    }
+       flex-wrap: wrap;
+       flex-basis: 100%;
+        margin:10px 10px; 
+      
+    } 
+
+    
 }
