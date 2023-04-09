@@ -95,7 +95,30 @@
   text-align: center;
   padding:50px;
 }
+.footer{ 
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-auto-rows: 30px;
+   height:150px;
 
+  
+}
+ 
+.f1{
+   text-align: center;
+   grid-column: 1/2;
+   padding:20px;
+}
+
+.f2>a:hover{
+   color:white;
+}
+.f2>a{
+   text-align: center;
+   text-decoration: none;
+   color:black;
+   grid-column: 2/3;
+}
 
 @media screen and (max-width: 768px){
   .container1{ 
@@ -200,39 +223,39 @@
      
   </head>
 <body>  
-    <nav class="navbar navbar-expand-lg    "> 
-        <!-- navbar-light bg-light  -->
-        <div class="container ">
-          <a class="navbar-brand " href="#"><h2>Luxury</h2></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarScroll">
-            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll ms-5" style="--bs-scroll-height: 100px;">
-              <li class="nav-item " >
-                <a class="nav-link active fw-bold ms-4" aria-current="page" href="Trangchu.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active fw-bold ms-4" aria-current="page" href="News.html">Giay</a>
-                 
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active fw-bold ms-4" aria-current="page" href="New1.html">Tui</a>
-                
-              </li>
-              <li class="nav-item ">
-                <a class="nav-link active fw-bold ms-4" aria-current="page" href="contact.html">Lien he</a>
-                
-              </li>
-         
-            </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
-        </div>
-      </nav>
+  <nav class="navbar navbar-expand-lg    "> 
+    <!-- navbar-light bg-light  -->
+    <div class="container ">
+      <a class="navbar-brand " href="#"><h2>Luxury</h2></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll ms-5" style="--bs-scroll-height: 100px;">
+          <li class="nav-item " >
+            <a class="nav-link active fw-bold ms-4" aria-current="page" href="Trangchu.html">Trang chủ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active fw-bold ms-4" aria-current="page" href="News.html">Giày</a>
+             
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active fw-bold ms-4" aria-current="page" href="New1.html">Túi</a>
+            
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link active fw-bold ms-4" aria-current="page" href="contact.html">Tài khoản</a>
+            
+          </li>
+     
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
 
       <div class="container1">
         <div class="header1 item">
@@ -440,7 +463,21 @@
           </div>
         </div>
 
-       </div>         
+       </div>  
+           
     </div>
+
+    <div class="container-fluid">
+    <div class="footer">
+      <div class="f1">   
+          <p><h1>Luxury</h1></p>
+      </div>
+      <div class="f2">
+          <a href=""><h3>Cửa hàng</h3></a> <br>
+          <a href=""><p>Địa chỉ: Cầu Giấy, Hà Nội</p></a>
+          <a href=""><p>Sđt: 0123456789</p></a>
+      </div>
+    </div>
+  </div> 
 </body>
 </html> 
