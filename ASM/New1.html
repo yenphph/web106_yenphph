@@ -6,214 +6,434 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        *{
-          padding:0;
-          margin:0;
-        }
-        body{
-          padding:0px 50px;
-        }
-        .container1{
-          display:grid;
-          grid-template-columns: repeat(4, 350px);
-          /* grid-auto-rows: auto ; */
-          row-gap: 50px;
-          column-gap: 10px;
-          justify-content: center;
-        }
-        .item{
-          min-height: 50px;
-        }
-        .header1{
-          grid-column: 1/3;
-          background-color: aqua;
-          /* height: 300px; */
-          
-        }
-        .header1>img{
-          width:100%; 
-          /* height: 300px; */
-        }
-        .header2{
-          grid-column: 3/5;
-          /* background-color: aqua; */
-          /* height: 300px; */
-        }
-        .header2>  img{
-          width:100%; 
-          /* height: 300px; */
-        }
-        
-        .banner{
-          height:450px;
-        }
-        .banner >img{
-          width:100%;
-          height:450px;
-        }
-        .content{
-      grid-column: 1/5;
-      /* background-color: rgb(97, 31, 108); */
-      display: grid;
-      /* grid-template-columns: repeat(3, 1fr); */
-      grid-template-columns: repeat(auto-fit , minmax(320px,1fr)); 
-      justify-content: space-between;
-      grid-auto-rows: auto;
-      grid-gap:50px; 
-  }
-  /* .sp{
-     margin:0px 40px;
-  } */
-  .content-img{
-      width:100%;
-     
-  }
-  .content-img > img{
-      width:100%;
-      height:300px;
+      *{
+        padding:0;
+        margin:0;
+      }
+      body{
+        padding:0px 50px;
+      }
+      .container1{
+        display:grid; 
+        grid-template-columns: repeat(4, 2fr);
+    
+        row-gap: 50px;
+ 
+      }
+      .item{
+        min-height: 50px;
+      }
+      .header1{
+        grid-column: 1/3;
+        background-color: aqua;        
+      }
+      .header1>img{
+        width:100%;    
+      }
+      .header2{
+        grid-column: 3/5;   
+      }
+
+      .header2>  img{
+        width:100%; 
+         
+      }
       
+      .img-banr{
+        height:300px;
+        width: 100%; 
+      }
+      .img-banr >img{
+        width:100%;
+        height:300px;
+      }
+      .banner{
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: auto;
+    display: grid;
+    column-gap: 20px;
+    grid-column: 1/5;
+      }
+      .text-banr{
+        text-align:center ;  
+      }
+      .content{
+    grid-auto-rows: auto;
+    display: grid;
+    grid-column: 1/5; 
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
+    
+}
+
+.content-img{
+    width:100%;
+   
+}
+.content-img > img{
+    width:100%;
+    height:300px;
+    
+}
+.content-text{
+    font-weight: 30px;
+    padding: 0px 10px;
+}
+.sp:hover{
+  border: 1px solid black;
+}
+.textmax {
+  grid-column: 2/4;
+  text-align: center;
+  padding:50px;
+}
+
+
+@media screen and (max-width: 768px){
+  .container1{ 
+        grid-template-columns: repeat(2, 1fr); 
+     }
+     body{
+      padding:0px;
   }
-  .content-text{
-      font-weight: 30px;
-      padding: 0px 10px;
+ .header1{
+        grid-column: 1/2;
+        width:100%;
+        height:300px;
+      }
+      .header1>img{
+        width:100%;
+        height:300px;
+      } 
+      .header2{
+        width:100%;
+         height:300px;
+        grid-column: 2/3;
+      }
+      .header2>img{
+        width:100%; 
+        height:300px;
+      } 
+     
+      .textmax {
+  grid-column: 1/4;
+  
+}
+
+.banner{
+     
+    grid-template-columns: repeat(2, 1fr);
+    width:100%;
+      }
+
+      .content{
+    margin: 0 10px;
+    grid-template-columns: repeat(2, 1fr);
+      }
+
+ .content-img > img{
+      height:400px;
+    }
+     
+}
+@media screen and (max-width: 335px){
+  .container1{ 
+        grid-template-columns: repeat(1, 1fr); 
+     }
+     body{
+      padding:0px;
   }
-      </style>
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-       
+ .header1{
+        grid-column: 1/2;
+        width:100%;
+        height:300px;
+      }
+      .header1>img{
+        width:100%;
+        height:300px;
+      } 
+      .header2{
+        width:100%; height:300px;
+        grid-column: 1/2;
+      }
+      .header2>img{
+        width:100%; height:300px;
+      } 
+      .img-banr{
+        height:320px;
+        width: 100%;
+        
+      }
+      .img-banr >img{
+        width:100%;
+        height:300px;
+      }
+
+
+.banner{
+  grid-auto-rows: auto;
+    grid-template-columns: repeat(1, 1fr);
+   
+      }
+
+      .content{
+    
+    grid-template-columns: repeat(1, 1fr);
+      }
+
+ .content-img > img{
+      height:400px;
+    }
+     
+}
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+     
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg    "> 
-        <!-- navbar-light bg-light  -->
-        <div class="container ">
-          <a class="navbar-brand " href="#"><h2>Luxury</h2></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarScroll">
-            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll ms-5" style="--bs-scroll-height: 100px;">
-              <li class="nav-item " >
-                <a class="nav-link active fw-bold ms-4" aria-current="page" href="banggia.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active fw-bold ms-4" aria-current="page" href="#">Giay</a>
-                 
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active fw-bold ms-4" aria-current="page" href="#">Tui</a>
-                
-              </li>
-              <li class="nav-item ">
-                <a class="nav-link active fw-bold ms-4" aria-current="page" href="#">Lien he</a>
-                
-              </li>
-         
-            </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
-        </div>
-      </nav>
+  <nav class="navbar navbar-expand-lg    "> 
+    <!-- navbar-light bg-light  -->
+    <div class="container ">
+      <a class="navbar-brand " href="#"><h2>Luxury</h2></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll ms-5" style="--bs-scroll-height: 100px;">
+          <li class="nav-item " >
+            <a class="nav-link active fw-bold ms-4" aria-current="page" href="Trangchu.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active fw-bold ms-4" aria-current="page" href="News.html">Giay</a>
+             
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active fw-bold ms-4" aria-current="page" href="New1.html">Tui</a>
+            
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link active fw-bold ms-4" aria-current="page" href="contact.html">Lien he</a>
+            
+          </li>
+     
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
 
-    <div class="container1">
-        <div class="header1 item">
-              <img src="https://scontent.fhan2-3.fna.fbcdn.net/v/t39.30808-6/335353621_1490759211458292_7605272096904291396_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=OwyC-Ic81nAAX8jYVWl&_nc_ht=scontent.fhan2-3.fna&oh=00_AfDIAfPPYX4Ch3irqIlPkSQ1GSJeAZ8hQhXlmmEc-w658A&oe=64345DF6" alt="">
-               
-            </div>
-
-        <div class="header2 item">
-          <img src="https://scontent.fhan2-4.fna.fbcdn.net/v/t39.30808-6/335084331_1403600123747042_8355420567710924227_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=VUPt9lqtPgEAX_904Oe&_nc_ht=scontent.fhan2-4.fna&oh=00_AfAiV7D0I7uiWcCSwCOr0ylRUxVBDONcf-F-ShapJPqTLA&oe=6435E775" alt="">
+  <div class="container1">
+    <div class="header1 item">
+          <img src="https://scontent.fhan2-3.fna.fbcdn.net/v/t39.30808-6/335353621_1490759211458292_7605272096904291396_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=OwyC-Ic81nAAX8jYVWl&_nc_ht=scontent.fhan2-3.fna&oh=00_AfDIAfPPYX4Ch3irqIlPkSQ1GSJeAZ8hQhXlmmEc-w658A&oe=64345DF6" alt="">
+           
         </div>
 
-        <div class="banner item">
-           <img src="https://cdn-images.farfetch-contents.com/jw-anderson-small-chain-hobo-leather-shoulder-bag_19208345_42421598_600.jpg" alt="">
-           <h5  style="text-align:center ;padding-top: 7px;">JW Anderson</h5>  
-          </div>
-
-        <div class="banner item">
-           <img src="https://static.zara.net/photos///2023/V/1/1/p/6334/110/800/2/w/453/6334110800_15_1_1.jpg?ts=1679661186281" alt="">
-           <h5  style="text-align:center ;padding-top: 7px;">ZARA</h5>  
-          </div>
-
-        <div class="banner item">
-          <img src="https://www.vascara.com/uploads/cms_productmedia/2023/March/31/tui-tote-double-pocket---tot-0116---mau-den__69280__1680202741-medium@2x.jpg" alt="">
-          <h5  style="text-align:center ;padding-top: 7px;">Vascara</h5>  
-        </div>
-        <div class="banner item">
-          <img src="https://static.bershka.net/4/photos2/2023/V/0/1/p/3691/668/810/aecc70ec161a8f02bdf37fe6df5e1c0a-3691668810_1_1_0.jpg?cropfixwidth=2052&imwidth=750&impolicy=bershka-crop-fix-width-itxmediumhigh&imformat=chrome" alt="">
-          <h5  style="text-align:center ;padding-top: 7px;">Bershka</h5>  
-        </div>
-
-        <div class="content item">
-          <div class="sp">
-              <div class="content-img">
-                  <img src="https://www.vascara.com/uploads/cms_productmedia/2023/April/2/tui-xach-nhan-day-chuoi-hat-van-da---tot-0109---mau-vang-chanh__69390__1680368855-medium@2x.jpg" alt="">
-              </div>
-              <div class="content-text">
-                  <h2><strong>Vascara</strong></h2>
-                  <p>Túi Xách Tay Bamboo Handle
-
-                  </p>
-                  <p><strong>925.000₫</strong></p>
-              </div>
-          </div>
-          <div class="sp">
-            <div class="content-img">
-                <img src="https://cdn-images.farfetch-contents.com/jw-anderson-small-chain-hobo-leather-shoulder-bag_19208345_42421598_600.jpg" alt="">
-            </div>
-            <div class="content-text">
-                <h2><strong>JW Anderson</strong></h2>
-                <p>CHUOI NHO HOBO TUI VAI DA
-
-                </p>
-                <p><strong>925.000₫</strong></p>
-            </div>
-        </div>
-        <div class="sp">
-          <div class="content-img">
-              <img src="https://old.joolux.com/media/catalog/product/t/n/tn_83.png" alt="">
-          </div>
-          <div class="content-text">
-              <h2><strong>Prada</strong></h2>
-              <p>Túi mini Re-Nylon Prada Re-Edition 2000
-
-              </p>
-              <p><strong>925.000₫</strong></p>
-          </div>
-        </div>
-
-        <div class="sp">
-          <div class="content-img">
-              <img src="https://old.joolux.com/media/catalog/product/t/n/tn_83.png" alt="">
-          </div>
-          <div class="content-text">
-              <h2><strong>Prada</strong></h2>
-              <p>Túi mini Re-Nylon Prada Re-Edition 2000
-
-              </p>
-              <p><strong>925.000₫</strong></p>
-          </div>
-        </div>
-
-        <div class="sp">
-          <div class="content-img">
-              <img src="https://old.joolux.com/media/catalog/product/t/n/tn_83.png" alt="">
-          </div>
-          <div class="content-text">
-              <h2><strong>Prada</strong></h2>
-              <p>Túi mini Re-Nylon Prada Re-Edition 2000
-
-              </p>
-              <p><strong>925.000₫</strong></p>
-          </div>
-        </div>
-
-
-       </div> 
-        
+    <div class="header2 item">
+      <img src="https://scontent.fhan2-4.fna.fbcdn.net/v/t39.30808-6/335084331_1403600123747042_8355420567710924227_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=VUPt9lqtPgEAX_904Oe&_nc_ht=scontent.fhan2-4.fna&oh=00_AfAiV7D0I7uiWcCSwCOr0ylRUxVBDONcf-F-ShapJPqTLA&oe=6435E775" alt="">
     </div>
 
+     <div class="banner item">
+        <div class="banr">
+            <div class="bb ">
+              <div class="img-banr">
+                <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/ded12e4f-902e-4d03-aeff-e5582635f78d/air-force-1-07-lv8-shoes-GwvjTM.png" alt="">
+              </div>
+              <div class="text-banr">
+                <h3 ><strong>Nike</strong></h3> 
+              </div>
+            </div>
+        </div>
+        <div class="banr">
+          <div class="bb ">
+            <div class="img-banr">
+              <img src="https://product.hstatic.net/200000265619/product/vn000cdev0n-web1_b171eb1ce8bd4d2f8d3be609fded0ed5_medium.jpg" alt="">
+            </div>
+            <div class="text-banr">
+              <h3 ><strong>Vans</strong></h3>
+            </div>
+          </div>
+      </div> 
+
+         <div class="banr">
+            <div class="bb ">
+              <div class="img-banr">
+                <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_500,h_500/global/374915/75/sv01/fnd/PNA/fmt/png/Suede-Classic-XXI-Men's-Sneakers alt="">
+              </div>
+              <div class="text-banr">
+                <h3 ><strong>JW Anderson</strong></h3> 
+              </div>
+            </div>
+        </div>
+
+
+         <div class="banr">
+            <div class="bb ">
+              <div class="img-banr">
+                <img src="https://nb.scene7.com/is/image/NB/u574ul2_nb_02_i?$pdpflexf2$&wid=440&hei=440" alt="">
+              </div>
+              <div class="text-banr">
+                <h3 ><strong>Newbalance</strong></h3>
+              </div>
+            </div>
+        </div>
+    </div> 
+
+    <div class="textmax item">
+      <p><h5><strong>Một món đồ xa xỉ như túi xách, giày dép không chỉ là hàng thời trang – nó còn mang lại giá trị lâu dài nếu được đầu tư khôn ngoan</strong></h5></p>
+    </div>
+    <div class="trong"></div>
+    <div class="content item">
+      <div class="sp">
+          <div class="content-img">
+              <img src="https://kicksgaleria.com/wp-content/uploads/2019/11/balenciaga-speed-605942W05GE1015-01-416x555.jpg" alt="">
+          </div>
+          <div class="content-text">
+            <h5  style="padding-top: 7px;">Balenciaga</strong></h5> 
+              <p>Balenciaga Speed Trainers
+
+              </p>
+              <p><strong>18,500,000 đ</strong></p>
+          </div>
+      </div>
+      <div class="sp">
+        <div class="content-img">
+            <img src="https://product.hstatic.net/200000265619/product/vn0a5fcbprp-web1_45ca8580738943f69df8227ff07c8f98_medium.jpg" alt="">
+        </div>
+        <div class="content-text">
+          <h5  style="padding-top: 7px;">Vans</strong></h5> 
+            <p>Giày Vans Mn Skate Old Skool Vans X One Piece
+
+            </p>
+            <p><strong>2,590,000₫</strong></p>
+        </div>
+    </div>
+    <div class="sp">
+      <div class="content-img">
+          <img src="https://nb.scene7.com/is/image/NB/u574rx2_nb_02_i?$pdpflexf2$&wid=440&hei=440" alt="">
+      </div>
+      <div class="content-text">
+        <h5  style="padding-top: 7px;">Bershka</h5>  
+          <p>Giày Duramo SL 2.0 3 colours
+          </p>
+          <p><strong>1.330.000₫</strong></p>
+      </div>
+    </div>
+
+    <div class="sp">
+      <div class="content-img">
+          <img src="https://nb.scene7.com/is/image/NB/u574vx2_nb_02_i?$pdpflexf2$&qlt=80&fmt=webp&wid=440&hei=440" alt="">
+      </div>
+      <div class="content-text">
+        <h5  style="padding-top: 7px;">Prada</h5>  
+          <p> 
+
+          </p>
+          <p><strong>925.000₫</strong></p>
+      </div>
+    </div>
+
+    <div class="sp">
+      <div class="content-img">
+          <img src="https://nb.scene7.com/is/image/NB/u574wo2_nb_02_i?$pdpflexf2$&qlt=80&fmt=webp&wid=440&hei=440" alt="">
+      </div>
+      <div class="content-text">
+        <h5  style="padding-top: 7px;">Vascara</h5>  
+          <p>Túi Tote Double Pocket
+
+          </p>
+          <p><strong>1.425.000₫</strong></p>
+      </div>
+    </div>
+
+
+    <div class="sp">
+      <div class="content-img">
+          <img src="https://kicksgaleria.com/wp-content/uploads/2019/11/Balenciaga-triple-s-544351W09ON1047-01-416x555.jpg" alt="">
+      </div>
+      <div class="content-text">
+        <h5  style="padding-top: 7px;">Prada</h5>  
+          <p> 
+            Túi da Saffiano
+          </p>
+          <p><strong>925.000₫</strong></p>
+      </div>
+    </div>
+
+
+    <div class="sp">
+      <div class="content-img">
+          <img src="https://product.hstatic.net/200000265619/product/vn0a5krf94h-web1_de44fe73f6884239b098d524b3e79b8d_medium.jpg" alt="">
+      </div>
+      <div class="content-text">
+        <h5  style="padding-top: 7px;">Vans </h5>  
+          <p>Giày Vans MOCA Old
+
+            Skool
+
+          </p>
+          <p><strong>2,240,000₫</strong></p>
+      </div>
+    </div>
+
+    <div class="sp">
+      <div class="content-img">
+          <img src="https://product.hstatic.net/200000265619/product/vn0007p18nl-web1_91e325c35f9144009afd5ade1fed4f4d_medium.jpg" alt="">
+      </div>
+      <div class="content-text">
+        <h5  style="padding-top: 7px;">Bershka</h5>  
+          <p>Giày Vans Old Skool Modular
+
+          </p>
+          <p><strong>2,115,000₫</strong></p>
+      </div>
+    </div>
+
+
+    <div class="sp">
+      <div class="content-img">
+          <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/c25f707e8051430caf20af180158affe_9366/Giay_Breaknet_2.0_trang_HP9445_01_standard.jpg" alt="">
+      </div>
+      <div class="content-text">
+        <h5  style="padding-top: 7px;">BREAKNET</h5>  
+          <p> 
+            GIÀY BREAKNET 2.0
+          </p>
+          <p><strong>1.120.000₫</strong></p>
+      </div>
+    </div>
+
+    <div class="sp">
+      <div class="content-img">
+          <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/fceca65b-709f-4072-b16a-98f3c1142fc4/defy-all-day-training-shoe-LtD2G1.png" alt="">
+      </div>
+      <div class="content-text">
+        <h5  style="padding-top: 7px;">Prada</h5>  
+          <p> 
+            Nike Defy All Day Men's Training Shoe
+          </p>
+          <p><strong>8.925.000₫</strong></p>
+      </div>
+    </div>
+
+
+    <div class="sp">
+      <div class="content-img">
+          <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/c7f04ac3-0424-4bc1-8e07-4ee891ff176c/jordan-series-es-shoes-FDtg9v.png" alt="">
+      </div>
+      <div class="content-text">
+        <h5  style="padding-top: 7px;">Prada</h5>  
+          <p> 
+            Jordan Series ES
+          </p>
+          <p><strong>4.425.000₫</strong></p>
+      </div>
+    </div>
+
+   </div>         
+</div>
 </body>
 </html>
