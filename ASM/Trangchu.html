@@ -5,7 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trang chủ</title>
-    <link rel="stylesheet" href="CSS/main.css">
+    <style>
+          .o{
+        height: 350px;
+    }
+    .footer{ 
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-auto-rows: 30px;
+   height:150px;
+  
+  
+}
+ 
+.f1{
+   text-align: center;
+   grid-column: 1/2;
+   padding:20px;
+}
+
+.f2>a:hover{
+   color:white;
+}
+.f2>a{
+   text-align: center;
+   text-decoration: none;
+   color:black;
+   grid-column: 2/3;
+}
+    </style>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 
@@ -13,428 +41,325 @@
 </head>
 <body>
     
-    <nav class="navbar navbar-expand-lg    "> 
-
-        <div class="container ">
-          <a class="navbar-brand " href="#"><h2>Luxury</h2></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarScroll">
-            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll ms-5" style="--bs-scroll-height: 100px;">
-              <li class="nav-item " >
-                <a class="nav-link active fw-bold ms-4" aria-current="page" href="Trangchu.html">Trang chủ</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active fw-bold ms-4" aria-current="page" href="News.html">Túi</a>
-                 
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active fw-bold ms-4" aria-current="page" href="New1.html">Giày</a>
-                
-              </li>
-              <li class="nav-item ">
-                <a class="nav-link active fw-bold ms-4" aria-current="page" href="contact.html">Tài khoản</a>
-                
-              </li>
-         
-            </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
-        </div>
-      </nav>
-    <div class="container">
-   
-
-
-        
-         
-        <div class="banner11 item">
-            <img src="https://f5-zpc.zdn.vn/171174942212420505/fe35ec56f8fc25a27ced.jpg" alt="">
-        </div>
-        <div class="banner12 item">
-            <img src="https://scontent.fhan14-1.fna.fbcdn.net/v/t1.15752-9/334887301_181872347943210_8590090953482892622_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=ae9488&_nc_ohc=ynACRxsGsdIAX-r3nqg&_nc_ht=scontent.fhan14-1.fna&oh=03_AdQnxaRhjg-yMMShMvgPOLxygmS859TNU6Qx0sUZob1BCA&oe=6447CEFA" alt="">
-        </div>
-        <div class="banner2 item">
-            <img src="https://scontent.fhan14-1.fna.fbcdn.net/v/t1.15752-9/334422999_2238064516582130_9049872568737408887_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=ae9488&_nc_ohc=1Dkq_YdQ-fwAX86rC2K&_nc_ht=scontent.fhan14-1.fna&oh=03_AdTgiZab-Tu4N8xyUBt6izl6C1JHRts4EGe-a-IB9x29zA&oe=6447C214" alt="">
-        </div>
-        <div class="banner3 item"> 
-            <img src="https://scontent.fhan14-3.fna.fbcdn.net/v/t1.15752-9/334881126_1291492744795939_7982268382739560493_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=ae9488&_nc_ohc=8CRY6iRSkHQAX_ayqx3&_nc_ht=scontent.fhan14-3.fna&oh=03_AdR05v98zF2YCbjerd4XbJIMNm7IDLnNaXGdtQ9J9gbVmg&oe=6447DB13" alt="">
-        </div>
-
-        <div class="sale">
-          
-            <div class="text">
-               <p><h3><strong>Một món đồ xa xỉ như túi xách, giày dép không chỉ là hàng thời trang – nó còn mang lại giá trị lâu dài nếu được đầu tư khôn ngoan</strong></h3></p>
-            </div>  
-        </div>
-        <!-- <h2>HOT...</h2> -->
-        <div class="content item">
+  <nav class="navbar navbar-expand-lg    "> 
+    <!-- navbar-light bg-light  -->
+    <div class="container-fluid ">
+      <a class="navbar-brand " href="#"><h2>Luxury</h2></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll ms-5" style="--bs-scroll-height: 100px;">
+          <li class="nav-item " >
+            <a class="nav-link active fw-bold ms-4" aria-current="page" href="Trangchu.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active fw-bold ms-4" aria-current="page" href="News.html">Bags</a>
+             
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active fw-bold ms-4" aria-current="page" href="New1.html">Shoes</a>
             
-            <div class="sp">
-                <div class="content-img">
-                    <img src="https://static.nike.com/a/images/q_auto:eco/t_product_v1/f_auto/dpr_1.3/w_467,c_limit/37c75095-7e1d-4192-a761-07ef1646202d/air-force-1-07-shoes-GCqJKK.png" alt="">
-                </div>
-                <div class="content-text">
-                    <h2><strong>Nike</strong></h2>
-                    <p>Nike Air Force 1 07
-
-                    </p>
-                    <p><strong>3,239,000 ₫</strong></p>
-                </div>
-            </div>
-
-            <div class="sp">
-                <div class="content-img">
-                    <img src="https://assets.adidas.com/images/w_276,h_276,f_auto,q_auto,fl_lossy,c_fill,g_auto/d0c122ac229745e98aa9af9c01475c69_9366/HQ9019_01_standard.jpg" alt="">
-                </div>
-                <div class="content-text">
-                    <h2><strong>adidas</strong></h2>
-                    <p>Superstar Shoes
-
-                    </p>
-                    <p><strong>2.800.000 ₫</strong></p>
-                </div>
-            </div>
-
-            <div class="sp">
-                <div class="content-img">
-                    <img src="https://static.nike.com/a/images/q_auto:eco/t_product_v1/f_auto/dpr_1.3/w_467,c_limit/6493a8c8-ad11-4dfa-a6ae-4b00ca09c996/air-force-1-mid-07-shoes-ZzCgrn.png" alt="">
-                </div>
-                <div class="content-text">
-                    <h2><strong>Nike</strong></h2>
-                    <p>Nike Air Force 1 Mid '07
-
-                    </p>
-                    <p><strong>3,519,000 ₫</strong></p>
-                </div>
-            </div>
-
-            <div class="sp" >
-                <div class="content-img">
-                    <img src="v5.png" alt="">
-                </div>
-                <div class="content-text">
-                    <h2><strong>Balenciaga</strong></h2>
-                    <p>Balenciaga Track Nylon Sneakers
-
-                    </p>
-                    <p><strong>18,450,000VND</strong></p>
-                </div>
-            </div>
-
-            <div class="sp">
-                <div class="content-img">
-                    <img src="v2.png" alt="">
-                </div>
-                <div class="content-text">
-                    <h2><strong>Balenciaga</strong></h2>
-                    <p>Giày NIKE JORDAN 1 LOW GUAVA ICE màu đen hồng
-
-                    </p>
-                    <p><strong>8.900.000 đ</strong></p>
-                </div>
-            </div>
-
-            <div class="sp">
-                <div class="content-img">
-                    <img src="https://f9-zpcloud.zdn.vn/5073426106636980085/4d05d06a1ef2c3ac9ae3.jpg" alt="">
-                </div>
-                <div class="content-text">
-                    <h2><strong>Adidas</strong></h2>
-                    <p>Giày NIKE JORDAN 1 LOW GUAVA ICE màu đen hồng
-
-                    </p>
-                    <p><strong>8.900.000 đ</strong></p>
-                </div>
-            </div>
-
-            <div class="sp">
-                <div class="content-img">
-                    <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_500,h_500/global/356999/12/sv01/fnd/PNA/fmt/png/Super-Liga-OG-Retro-Sneakers" alt="">
-                </div>
-                <div class="content-text">
-                    <h2><strong>Puma</strong></h2>
-                    <p>Super Liga OG Retro Sneakers
-
-                    </p>
-                    <p><strong>8.900.000 đ</strong></p>
-                </div>
-            </div>
-
-            <div class="sp">
-                <div class="content-img">
-                    <img src="https://f8-zpcloud.zdn.vn/6854110311926070836/e88c4dcafc52210c7843.jpg" alt="">
-                </div>
-                <div class="content-text">
-                    <h2><strong>Balenciaga</strong></h2>
-                    <p>Giày NIKE JORDAN 1 LOW GUAVA ICE màu đen hồng
-
-                    </p>
-                    <p><strong>8.900.000 đ</strong></p>
-                </div>
-            </div>
-
-            <div class="sp">
-                <div class="content-img">
-                    <img src="https://cf.shopee.vn/file/sg-11134201-22120-jedfpw1v6ukv9a" alt="">
-                </div>
-                <div class="content-text">
-                    <h2><strong>Lous vuitton</strong></h2>
-                    <p>Giày NIKE JORDAN 1 LOW GUAVA ICE màu đen hồng
-
-                    </p>
-                    <p><strong>8.900.000 đ</strong></p>
-                </div>
-            </div>
-
-            <div class="sp">
-                <div class="content-img">
-                    <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_500,h_500/global/353572/12/sv01/fnd/PNA/fmt/png/Roma-Basic-Sneakers" alt="">
-                </div>
-                <div class="content-text">
-                    <h2><strong>Puma</strong></h2>
-                    <p>Giày NIKE JORDAN 1 LOW GUAVA ICE màu đen hồng
-
-                    </p>
-                    <p><strong>1.900.000 đ</strong></p>
-                </div>
-            </div>
-        </div>
-        <hr> <hr>
- 
-        <div class="footer">
-            <div class="f1">   
-                <p><h1>Luxury</h1></p>
-            </div>
-            <div class="f2">
-                <a href=""><h3>Cửa hàng</h3></a> <br>
-                <a href=""><p>Địa chỉ: Cầu Giấy, Hà Nội</p></a>
-                <a href=""><p>Sđt: 0123456789</p></a>
-            </div>
-        </div>
-    
-      </div>
-    
-
-
- 
-      <nav class="navbar navbar-expand-lg    "> 
-   
-        <div class="container ">
-          <a class="navbar-brand " href="#"><h2>Luxury</h2></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarScroll">
-            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll ms-5" style="--bs-scroll-height: 100px;">
-              <li class="nav-item " >
-                <a class="nav-link active fw-bold ms-4" aria-current="page" href="Trangchu.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active fw-bold ms-4" aria-current="page" href="News.html">Bags</a>
-                 
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active fw-bold ms-4" aria-current="page" href="New1.html">Shoes</a>
-                
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active fw-bold ms-4" aria-current="page" href="">Sale</a>
-                
-              </li>
-              <li class="nav-item ">
-                <a class="nav-link active fw-bold ms-4" aria-current="page" href="contact.html">Tài khoản</a>
-                
-              </li>
-         
-            </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
-        </div>
-      </nav>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active fw-bold ms-4" aria-current="page" href="">Sale</a>
+            
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link active fw-bold ms-4" aria-current="page" href="contact.html">Tài khoản</a>
+            
+          </li>
      
-      <!--c-->
- 
-      <div id="carouselExampleCaptions" class="carousel slide">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="xoa1.png" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Lorem ipsum dolor sit amet consectetur .</h5>
-              <p>Inventore suscipit nulla optio quia, dolores ipsa a numquam possimus. Delectus magni mollitia incidunt</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="xoa3.png" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>Some representative placeholder content for the second slide.</p>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
       </div>
+    </div>
+  </nav>
+ 
+  <!--banner-->
+   
+  <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="xoa1.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Lorem ipsum dolor sit amet consectetur .</h5>
+          <p>Inventore suscipit nulla optio quia, dolores ipsa a numquam possimus. Delectus magni mollitia incidunt</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="xoa3.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Second slide label</h5>
+          <p>Some representative placeholder content for the second slide.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!--Hang-->
+ 
+  <div class=" hang bg-primary-subtle" style="text-align: center; ">
+    <h2 class="p-5">BRANDS AND PICKS</h2>    </div>
+   <div class="container-fluid">
+
+
+  <div class="row row-cols-1  row-cols-lg-4 row-cols-md-2 row-cols-sm-1 g-4 bg-primary-subtle">
+    <div class="col">
+      <div class="card ">
+        <img src="https://s7d2.scene7.com/is/image/Coach/cg974_txt_a0?fmt=jpg&wid=711&hei=888&qlt=80%2C1&op_sharpen=0&resMode=bicub&op_usm=5%2C0.2%2C0%2C0&iccEmbed=0&fit=vfit" class="card-img-top o" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Coach</h5>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+        <div class="card ">
+        <img src="https://www.lemino.vn/FileManager/Women/Handbangs/Imitation_leather/26001/LE26001-80/Tui-xach-nu-Lemino-Monogram-Jacquard-LE26001-80-01.JPG" class="card-img-top o" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Lemino</h5>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card ">
+        <img src="https://www.rlmedia.io/is/image/PoloGSI/s7-1479619_alternate1?$rl_df_pdp_5_7$" class="card-img-top o" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Ralph Lauren</h5>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+        <div class="card ">
+        <img src="https://static.zara.net/photos///2023/V/1/1/p/5013/110/202/2/w/750/5013110202_6_2_1.jpg?ts=1675074816619" class="card-img-top o" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Zaza</h5>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+        <div class="card ">
+          <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_500,h_500/global/392730/04/sv01/fnd/PNA/fmt/png/Cali-Dream-Leather-Women's-Sneakers" class="card-img-top o" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Puma</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+<!--xu hướng-->
+
+
+<div class="     xu-huong  "  >
+    <h2 style="text-align:center; " class="p-5">TRENDING NOW</h2> </div>
+   <div class="container-fluid"> 
+<div class=" row row-cols-1 row-cols-lg-4 row-cols-md-2  row-cols-sm-1 g-4 ">
+     <div class="col">
+      <div class="card h-100">
+        <img src="https://s7d2.scene7.com/is/image/Coach/cf077_chr_a0?fmt=jpg&wid=711&hei=888&qlt=80%2C1&op_sharpen=0&resMode=bicub&op_usm=5%2C0.2%2C0%2C0&iccEmbed=0&fit=vfit" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Coach</h5>
+          <p class="card-text">FIELD TOTE 40 IN SIGNATURE CANVAS WITH REXY</p>
+          <p>
+            $1,100.00
+          </p>
+        </div>            
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="https://s7d2.scene7.com/is/image/Coach/cc097_ary_a0?$desktopProductTile$" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"> Coach</h5>
+          <p class="card-text">FIELD TOTE 40 WITH COACH BADGE</p>
+          <p>
+            $1,600.00
+          </p>
+        </div>          
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="https://s7d2.scene7.com/is/image/Coach/cg968_txt_a0?fmt=jpg&wid=711&hei=888&qlt=80%2C1&op_sharpen=0&resMode=bicub&op_usm=5%2C0.2%2C0%2C0&iccEmbed=0&fit=vfit" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Coach</h5>
+          <p class="card-text">DISNEY X COACH FLIGHT BAG 19 IN SIGNATURE TEXTILE JACQUARD WITH PATCHES</p>
+          <p>
+            $750.00
+          </p>
+        </div>            
+      </div>
+    </div>
+
+    <div class="col">
+        <div class="card h-100">
+          <img src="https://www.rlmedia.io/is/image/PoloGSI/s7-1468091_alternate1?$plpDeskRF$" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">RALPH LAUREN</h5>
+            <p class="card-text">Court Suede & Oxford Unisex Sneaker</p>
+            <p>
+                $198.00
+            </p>
+          </div>            
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="https://www.rlmedia.io/is/image/PoloGSI/s7-1460026_alternate1?$plpDeskRF$" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">RALPH LAUREN</h5>
+            <p class="card-text">Trackster 200 Suede & Mesh Sneaker</p>
+            <p>
+                $138.00
+            </p>
+          </div>          
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="https://www.rlmedia.io/is/image/PoloGSI/s7-1475930_alternate1?$plpDeskRF$" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">RALPH LAUREN</h5>
+            <p class="card-text">Train 89 Suede & Oxford Sneaker</p>
+            <p>
+                $128.00
+            </p>
+          </div>            
+        </div>
+   </div>
   
-      <div class=" hang bg-primary-subtle" style="text-align: center; ">
-        <h2 class="p-5">BRANDS AND PICKS</h2>
-       
-      <div class="row row-cols-1 row-cols-md-5 row-cols-sm-1 g-4">
-        <div class="col">
-          <div class="card ">
-            <img src="https://s7d2.scene7.com/is/image/Coach/cg974_txt_a0?fmt=jpg&wid=711&hei=888&qlt=80%2C1&op_sharpen=0&resMode=bicub&op_usm=5%2C0.2%2C0%2C0&iccEmbed=0&fit=vfit" class="card-img-top o" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Coach</h5>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-            <div class="card ">
-            <img src="https://www.lemino.vn/FileManager/Women/Handbangs/Imitation_leather/26001/LE26001-80/Tui-xach-nu-Lemino-Monogram-Jacquard-LE26001-80-01.JPG" class="card-img-top o" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Lemino</h5>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card ">
-            <img src="https://www.rlmedia.io/is/image/PoloGSI/s7-1479619_alternate1?$rl_df_pdp_5_7$" class="card-img-top o" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Ralph Lauren</h5>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-            <div class="card ">
-            <img src="https://static.zara.net/photos///2023/V/1/1/p/5013/110/202/2/w/750/5013110202_6_2_1.jpg?ts=1675074816619" class="card-img-top o" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Zaza</h5>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-            <div class="card ">
-              <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_500,h_500/global/392730/04/sv01/fnd/PNA/fmt/png/Cali-Dream-Leather-Women's-Sneakers" class="card-img-top o" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Puma</h5>
-              </div>
-            </div>
-          </div>
-      
-    </div>
-    </div>
  
-    <!--xu hướng-->
-
-    <div class="  xu-huong  "  >
-        <h2 style="text-align:center; " class="p-5">TRENDING NOW</h2> 
-       
-    <div class=" row row-cols-1 row-cols-md-3  row-cols-sm-1 g-4 ">
-         <div class="col">
-          <div class="card h-100">
-            <img src="https://s7d2.scene7.com/is/image/Coach/cf077_chr_a0?fmt=jpg&wid=711&hei=888&qlt=80%2C1&op_sharpen=0&resMode=bicub&op_usm=5%2C0.2%2C0%2C0&iccEmbed=0&fit=vfit" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Coach</h5>
-              <p class="card-text">FIELD TOTE 40 IN SIGNATURE CANVAS WITH REXY</p>
-              <p>
-                $1,100.00
-              </p>
-            </div>            
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <img src="https://s7d2.scene7.com/is/image/Coach/cc097_ary_a0?$desktopProductTile$" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title"> Coach</h5>
-              <p class="card-text">FIELD TOTE 40 WITH COACH BADGE</p>
-              <p>
-                $1,600.00
-              </p>
-            </div>          
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <img src="https://s7d2.scene7.com/is/image/Coach/cg968_txt_a0?fmt=jpg&wid=711&hei=888&qlt=80%2C1&op_sharpen=0&resMode=bicub&op_usm=5%2C0.2%2C0%2C0&iccEmbed=0&fit=vfit" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Coach</h5>
-              <p class="card-text">DISNEY X COACH FLIGHT BAG 19 IN SIGNATURE TEXTILE JACQUARD WITH PATCHES</p>
-              <p>
-                $750.00
-              </p>
-            </div>            
-          </div>
-        </div>
-
-        <div class="col">
-            <div class="card h-100">
-              <img src="https://www.rlmedia.io/is/image/PoloGSI/s7-1468091_alternate1?$plpDeskRF$" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">RALPH LAUREN</h5>
-                <p class="card-text">Court Suede & Oxford Unisex Sneaker</p>
-                <p>
-                    $198.00
-                </p>
-              </div>            
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100">
-              <img src="https://www.rlmedia.io/is/image/PoloGSI/s7-1460026_alternate1?$plpDeskRF$" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">RALPH LAUREN</h5>
-                <p class="card-text">Trackster 200 Suede & Mesh Sneaker</p>
-                <p>
-                    $138.00
-                </p>
-              </div>          
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100">
-              <img src="https://www.rlmedia.io/is/image/PoloGSI/s7-1475930_alternate1?$plpDeskRF$" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">RALPH LAUREN</h5>
-                <p class="card-text">Train 89 Suede & Oxford Sneaker</p>
-                <p>
-                    $128.00
-                </p>
-              </div>            
-            </div>
-          </div>
-
+</div>
+<!--New-->
+<div class=" new  "  >
+    <h2 style="text-align:center; " class="p-5">NEW</h2> </div>
+    <div class="container-fluid"> 
+   <div class=" row row-cols-1  row-cols-lg-3 row-cols-md-3  row-cols-sm-1 g-4 ">
+     <div class="col">
+      <div class="card h-100">
+        <img src="https://s7d2.scene7.com/is/image/Coach/ci219_em7_a0?fmt=jpg&wid=711&hei=888&qlt=80%2C1&op_sharpen=0&resMode=bicub&op_usm=5%2C0.2%2C0%2C0&iccEmbed=0&fit=vfit" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Coach</h5>
+          <p class="card-text">RUNNER SNEAKER</p>
+          <p>
+            $475,00
+          </p>
+        </div>            
       </div>
     </div>
-    <div class="mt-5">
-        <div class="footer">
-            <div class="f1">   
-                <p><h1>Luxury</h1></p>
-            </div>
-            <div class="f2">
-                <a href=""><h3>Cửa hàng</h3></a> <br>
-                <a href=""><p>Địa chỉ: Cầu Giấy, Hà Nội</p></a>
-                <a href=""><p>Sđt: 0123456789</p></a>
-            </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="https://s7d2.scene7.com/is/image/Coach/cg533_tn2_a0?fmt=jpg&wid=711&hei=888&qlt=80%2C1&op_sharpen=0&resMode=bicub&op_usm=5%2C0.2%2C0%2C0&iccEmbed=0&fit=vfit" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"> Coach</h5>
+          <p class="card-text">LUNAR NEW YEAR CITYSOLE HIGH TOP PLATFORM SNEAKER IN SIGNATURE CANVAS WITH RABBIT</p>
+          <p>
+            $375.00
+          </p>
+        </div>          
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="https://static.zara.net/photos///2023/V/1/1/p/2585/110/197/2/w/750/2585110197_6_2_1.jpg?ts=1676982450903" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Zaza</h5>
+          <p class="card-text">GIAY MOCCASIN PHỐI MÀU</p>
+          <p>
+            $750.00
+          </p>
+        </div>            
+      </div>
+    </div>
+
+    <div class="col">
+        <div class="card h-100">
+          <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/387149/01/fnd/PNA/fmt/png/Cali-Dream-Wooly-Women's-Sneakers" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Puma</h5>
+            <p class="card-text">Giày thể thao nữ Cali Dream Wooly</p>
+            <p>
+                $198.00
+            </p>
+          </div>            
         </div>
-    </div>  
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="https://static.zara.net/photos///2023/V/1/1/p/6216/110/800/32/w/750/6216110800_6_2_1.jpg?ts=1676464822097" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">RALPH LAUREN</h5>
+            <p class="card-text">CLEAR BAG WITH LACK</p>
+            <p>
+                $628.00
+            </p>
+          </div>          
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="https://www.rlmedia.io/is/image/PoloGSI/s7-1436559_alternate1?$plpDeskRF$" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">RALPH LAUREN</h5>
+            <p class="card-text">Polo Ralph Lauren</p>
+            <p>
+                $628.00
+            </p>
+          </div>            
+        </div>
+      </div>
+       
+      <div class="col">
+        <div class="card h-100">
+          <img src="https://static.zara.net/photos///2023/V/1/1/p/6014/110/800/3/w/608/6014110800_15_15_1.jpg?ts=1680095871817" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Zaza</h5>
+            <p class="card-text">TO SHOPPER COCO MINI</p>
+            <p>
+                $628.00
+            </p>
+          </div>            
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- </div> -->
+
+
+
+<!--footer-->
+<div class="container-fluid">
+<div class="mt-5">
+  <div class="footer">
+      <div class="f1">   
+          <p><h1>Luxury</h1></p>
+      </div>
+      <div class="f2">
+          <a href=""><h3>Cửa hàng</h3></a> <br>
+          <a href=""><p>Địa chỉ: Cầu Giấy, Hà Nội</p></a>
+          <a href=""><p>Sđt: 0123456789</p></a>
+      </div>
+  </div>
+</div>
+
+</div>
 </body>
 </html>
