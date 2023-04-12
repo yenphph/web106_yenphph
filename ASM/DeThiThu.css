@@ -1,0 +1,27 @@
+
+.noidung {
+   display: grid;
+   grid-template-columns: 42% 42%;
+   justify-content: space-around;
+   row-gap: 6px;
+  
+}
+.tracuu{
+   text-align: center;
+   font-size: 30px;
+}
+
+@media screen and (max-width: 550px) {
+  .item3 {
+   order: 4;
+  }
+  .item4{
+   order: 3;
+  }
+  .item5{
+   order: 5;
+  }
+  .item6{
+   order: 6;
+  }
+}
